@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hry</title>
+  <link rel="stylesheet" href="../styles/puzzle.css">
+</head>
+
+<body>
+  <div class="content-puzzle">
+    <div id="puzzle"></div>
+    <div id="help">
+      <button id="hint">Nápověda</button>
+      <img alt="" id="hintimg">
+    </div>
+  </div>
+</body>
+<script src="../scripts/headbreaker.js"></script>
+<script>
+  function toggleHint() {
+    let visible = document.getElementById('hintimg').style.display === 'block';
+    document.getElementById('hintimg').style.display = visible ? 'none' : 'block';
+  }
+  let time = sessionStorage.setItem('time', new Date());
+
+  let count = sessionStorage.getItem('count');
+  let image = sessionStorage.getItem('image');
+  let hint = document.getElementById('hintimg');
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    hint.src = image;
+    document.getElementById('hint').addEventListener('click', () => {
+      toggleHint();
+    })
+    
+    let xul = new Image();
+    xul.src = image;
+    xul.onload = () => {
+      const autogen = new headbreaker.Canvas('puzzle', {
+        width: 850, height: 650,
+        pieceSize: 100, proximity: 20,
+        borderFill: 10, strokeWidth: 1.5,
+        lineSoftness: 0.0, image: xul,
+        preventOffstageDrag: true,
+        // outline: new headbreaker.outline.Rounded(),
+        fixed: true
+      });
+
+      autogen.adjustImagesToPuzzleHeight();
+      autogen.autogenerate({
+        horizontalPiecesCount: count,
+        verticalPiecesCount: count
+      });
+      autogen.shuffle(0.8)
+      autogen.draw();
+      autogen.attachSolvedValidator();
+      autogen.onValid(() => {
+        setTimeout(() => {
+          sessionStorage.setItem('time', (new Date) - Date.parse(sessionStorage.getItem('time')));
+          window.location.href = 'endscreen.html';
+        }, 600)
+      })
+    }
+  });
+
+</script>
+
+</html>

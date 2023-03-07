@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        @font-face {
+            font-family: northern-soul;
+            src: url(asset/NorthernSoul-Caps.otf);
+        }
+
+        .container {
+
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 10px;
+            padding-top: 50px;
+        }
+
+        #puzzle {
+            background-image: url(asset/puzzlePiktogram.png);
+            font-size: 100px;
+        }
+
+        #puzzle div {
+            top: 180px;
+            left: 40px
+        }
+
+        #pamet {
+            background-image: url(asset/pametPiktogram.png);
+            font-size: 80px;
+        }
+
+        #pamet div {
+            top: 181px;
+            left: 71px
+        }
+
+        #pary {
+            background-image: url(asset/paryPiktogram.png);
+            font-size: 115px
+        }
+
+        #pary div {
+            top: 164px;
+            left: 67px
+        }
+
+        #draha {
+            background-image: url(asset/drahaPiktogram.png);
+            font-size: 120px;
+        }
+
+        #draha div {
+            top: 145px;
+            left: 40px
+        }
+
+        .hra {
+            height: 300px;
+            font-family: northern-soul;
+            background-size: 300px;
+        }
+
+        .hra div {
+            position: relative
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    
+        <a href="puzzle/index.html">
+            <div class="hra" id="puzzle">
+                <div>Puzzle</div>
+            </div>
+        </a>
+        <a href="draha/index.html">
+            <div class="hra" id="draha">
+                <div>Dráha</div>
+            </div>
+        </a>
+        <a href="pary/index.html">
+            <div class="hra" id="pary">
+                <div>Páry</div>
+            </div>
+        </a>
+        <a href="pamet/index.html">
+            <div class="hra" id="pamet">
+                <div>Pamět</div>
+            </div>
+        </a>
+    </div>
+</body>
+
+
+</html>

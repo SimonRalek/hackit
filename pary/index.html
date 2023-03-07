@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hra</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+</head>
+<body>
+	<div class="content">
+			<div id="help">
+				<span style="width: 100%">
+					<button id="back" style="all:unset" onclick="goBackToMenu()"><img class="img-menu" src="images/components/Back.png" /></button>
+				</span>
+				<span style="text-align:justify;width: 80%; margin-left: auto;margin-right: auto;">
+					<p>Cílem této hry je v co nejkratším čase a na co nejmenší počet pokusů najít dvojici stejných obrázků.</p>
+					<p>Na obrazovce se zobrazí několik zamíchaných obrázků, přičemž se mezi nimi na náhodných pozicích bude nacházet dvojice stejných obrázků. Cílem je tuto dvojici v co nejkratším čase najít a označit.</p>
+					<p>Hra může pomoci procvičit pozornost, orientaci a rychlost. Na konci hry je zobrazen čas potřebný k dokončení hry. Tento údaje je možné v čase pozorovat a postupně se snažit o zkrácení času potřebného na dohrání hry.</p>
+					<p>Hra tedy nabízí možnost zlepšování se. Obtížnost hry se odvyjí od počtu kol. Hru je možné použít také pro více hráčů, kteří se střídají a počty uhádnutých obrázků si zapamatují</p>
+
+				</span>
+			</div>
+			<div id="gameData">
+				<div id="timer" style="font-size: xxx-large"></div>
+				<div id="level" style="display:none">Úroveň 1</div>
+				<div id="game"></div>
+			</div>
+			<div id="gameSettings">
+				<button value="3" id="level3" class="menuSettingsButton">3 Úrovně</button>
+				<button value="6" id="level6" class="menuSettingsButton active">6 Úrovní</button>
+				<button value="9" id="level9" class="menuSettingsButton">9 Úrovní</button>
+			</div>
+			<div id="buttons" style="display:inline-block">
+				<button style="all:unset" id="back" onclick="window.location.href = '../index.html'"><img style="margin-top: 10px;" class="img-menu" src="images/components/Home.png" /></button>
+				<button style="all:unset" onclick="showHelp()"><img class="img-menu" src="images/components/Help.png" /></button>
+				<button id="startGame" style="all:unset;" onclick="startGame()"><img class="img-menu" src="images/components/StartGame.png" /></button>
+			</div>
+			<button id="exit" style="all:unset;display: none;" onclick="exitGame()"><img class="img-menu" src="images/components/Home.png" /></button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

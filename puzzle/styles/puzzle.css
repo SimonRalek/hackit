@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Northernsoul';
+    src: url(../fonts/NorthernSoul-Caps.otf);
+}
+
+
+.content-puzzle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97.9vh;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 1rem;
+    row-gap: 1rem;
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+    min-height: 100%;
+}
+#puzzle {
+    background-image: url(../images/podlozka.png); 
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Northernsoul';
+}
+
+.pieces {
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    height: 70px;
+    border-radius: 20% 20% 0 0;
+    width: 100%;
+}
+
+#help > button {
+    position: absolute;    
+    top: 5px;
+    right: 5px;
+    background-color: purple;
+    border: 0;
+    color: white;
+    font-family: 'Northernsoul';
+    font-size: 30px;
+}
+
+#help > img {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    display: none;
+    width: 140px;
+    aspect-ratio: 1/1;
+}

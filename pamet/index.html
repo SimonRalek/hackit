@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hra</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+    </head>
+    <body>
+        <div class="content">
+			<div id="help">
+				<span style="width: 100%">
+					<button id="back" style="all:unset" onclick="goBackToMenu()"><img class="img-menu" src="images/components/Back.png" /></button>
+				</span>
+				<div style="text-align:justify;max-width: 80%; margin-left: auto;margin-right: auto;">
+					<p>Cílem této hry je procvičit pozornost a paměť. Na začátku každého kola proběhne zleva, nebo zprava obrázek a cílem hry je obrázek si zapamatovat a poté ve výběru z několika náhodných obrázků označit ten správný.</p>
+					<p>Náročnost se určuje počtem obrázků z výběr a navíc po každém úspěšném kole se rychlost přejíždějícího obrázku lehce zvýší. </p>
+					<p>Cíem je se postupně dostávat do vyšších úrovní a překonávat své limity</p>
+				</div>
+			</div>
+			<div id="gameData">
+				<div id="sliding-image-container"></div>
+                <div id="label" style="text-align:center; margin-top: 7%">Zapamatuj si obrázek</div>
+                <div id="level" style="font-size: xx-large;margin-bottom: 7%"></div>
+			</div>
+			<div id="gameSettings">
+                <div style="text-align: center;font-size: xx-large;display: block;">Vyber obtížnost</span>
+					<br><br>
+					<button value="5" id="level1" class="menuSettingsButton">5 obrázků</button>
+					<button value="6" id="level2" class="menuSettingsButton active">6 obrázků</button>
+					<button value="7" id="level3" class="menuSettingsButton">7 obrázků</button>
+				</div>
+				<div id="buttons" style="display:inline-block;width: 100%;">
+					<button style="all:unset" onclick="window.location.href = '../index.html'"><img style="margin-top: 10px;" class="img-menu" src="images/components/Home.png" /></button>
+					<button style="all:unset" onclick="showHelp()"><img class="img-menu" src="images/components/Help.png" /></button>
+					<button id="startGame" style="all:unset;"><img class="img-menu" src="images/components/StartGame.png" /></button>
+				</div>
+			</div>
+			<div id="exitWidget" style="display: none;">
+				<button id="exit" style="all:unset" onclick="exitGame()"><img class="img-menu" src="images/components/Home.png" /></button>
+			</div>
+		</div>
+        <script src="script.js"></script>
+        <script src="SlidingImage.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179 79" width="179" height="79">
+	<title>easy</title>
+	<defs>
+		<image  width="179" height="79" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAABPCAMAAACXmgSjAAAAAXNSR0IB2cksfwAAANJQTFRFLy8vERERBwcHAAAACQkJAQEBAwMDAgICCwsLCAgIExMTBQUFBAQEDg4OBgYGCgoKDQ0NJCQkeXl5bW1tbm5ub29vbGxsd3d3eHh4cXFxWVlZWlpa8/Pz////9/f3+/v77+/vrq6uFhYWV1dX/f39/v7+vb29TU1N+Pj4+fn5tra2VVVVvLy8UlJS+vr6urq6UVFRvr6+/Pz8U1NTVFRUUFBQ9vb2u7u79fX1tbW1S0tLuLi4t7e3YWFh5ubm7e3tq6urHR0dGhoamJiYMDAwX19fBCBjgwAAAlBJREFUeJztm+ly2jAURhV/XClUYmlL6arQpHYgLdBm6b636fu/UiWcFmLGdvOjWhgdZhBj2cORRrq6yJixvQzoEHFBCBUSQuxTF13cglSC9aCyPjBQXAgylb79qlgnITgHJIboQ0rFOITidPvOXctodG8UGtZrPB7fHz94+Ii4GQzEMmWaoB4/0aFzMHl6eCSEkn0GIRXhmc4L31JNFLl9P95H6QxSfUwnvq3amM1O9HM7qAHGzaxTeOFbqY3VKJgrSBMqzNiwMW6R+5ZqoVjqXL/kq1DCCAKEV76d1tT13kTnpzZqEIXnXMaC7fkVsPOyriJg51qSsxuSsxsidrZ5XXL+jyRnNyRnNyRnNyRnNyRnNyRnN+ya85k/rUaanEPdUdq1sREqydkNydkNydkNydkNydkNydkNFWdsOod637vJOVR2wJmw8G3UTuTOsM507tuonYqziNL5wrdRO9ecCTy68Wxn4WKjKlAanINly3m9phSR7H2JCNfB6JwpVufXlRPe1F2ZV8omtrJac2B2A8vr+8qbzsKuKuehZs1rTC+9FZE5F3E6z1f/E43I2TDn8TkfJ2cnGGeKzflUlc7IAMmnJ66/P7/hPb2Zfqffy6u8jivZwYdQs7m/nOml/ihtD3PGVxscF7q4wrdbHRNj/alrjAGmTLqR7X3+4tupnYOv375LGzhMzi+VKX8gUOwTVeUnOTyC/YUCNjRlZ2DrSqjCn2vrjrdRd371YN159jEwW9qQ0cGA0O2xn9OeuSCT/9xwx6xbIc3LTL7LX78BeCmfM7ExQvsAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 24px;fill: #000000;font-weight: 400;font-family: "NorthernSoul-Caps", "NorthernSoul Caps" } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<text id="Střední" style="transform: matrix(2.816,0,0,2.935,21,66.541)" >
+		<tspan x="0" y="0" class="t0">S</tspan><tspan  y="0" class="t0">t</tspan><tspan  y="0" class="t0">ř</tspan><tspan  y="0" class="t0">e</tspan><tspan  y="0" class="t0">d</tspan><tspan  y="0" class="t0">n</tspan><tspan  y="0" class="t0">í
+</tspan>
+	</text>
+	<text id="" style="transform: matrix(1,0,0,1,334,8)" >
+	</text>
+</svg>

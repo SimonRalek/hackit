@@ -1,0 +1,79 @@
+
+@font-face {
+    font-family: 'Northernsoul';
+    src: url(../fonts/NorthernSoul-Caps.otf);
+}
+
+body {
+    font-family: 'Northernsoul';
+    font-size: 5rem;
+}
+
+.content-endscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    row-gap: 3rem;
+    min-height: 100%;
+}
+
+#title h1 {
+    font-family: 'Northernsoul';
+    color: blue;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0px
+}
+
+
+#buttons-end {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+}
+
+#buttons-end > img {
+    height: 70px;
+    cursor: pointer;
+}
+
+.content-endscreen #results #frame {
+    aspect-ratio: 1/1;
+    width: 320px;
+    border-radius: 30%;
+    border: 6px solid black;
+    padding: 10px;
+}
+
+.content-endscreen #results {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6rem;
+}
+.content-endscreen #results #frame #time {
+    margin-top: 2rem;
+}
+.green {
+    color: green;
+    display: flex;
+}
+p {
+    margin: 0;
+}
+.content-endscreen #results #frame > div > p{
+    font-family: 'Northernsoul';
+    color: blue;
+    font-size: 5rem;
+    margin: 0;
+}
+
+#time {
+    display: flex;
+}
+
+#dif-output {
+    text-align: center;
+}
